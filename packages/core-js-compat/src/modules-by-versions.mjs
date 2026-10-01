@@ -331,4 +331,10 @@ export default {
     'esnext.promise.all-keyed',
     'esnext.promise.all-settled-keyed',
   ],
+  3.51: [
+    'es.iterator.chunks',
+    'es.iterator.includes',
+    'es.iterator.join',
+    'es.iterator.windows',
+  ],
 };

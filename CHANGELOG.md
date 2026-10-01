@@ -1,16 +1,33 @@
 # Changelog
 ### Unreleased
+- [`Iterator` chunking proposal](https://github.com/tc39/proposal-iterator-chunking):
+  - Built-ins:
+    - `Iterator.prototype.chunks`
+    - `Iterator.prototype.windows`
+  - Moved to stable ES, [September 2026 TC39 meeting](https://github.com/tc39/proposals/commit/ee92ecf4754feca09a333fcf615b75422bf2c0f9)
+  - Added `es.` namespace modules, `/es/` and `/stable/` namespace entries
+- [`Iterator` includes proposal](https://github.com/tc39/proposal-iterator-includes):
+  - Built-in:
+    - `Iterator.prototype.includes`
+  - Moved to stable ES, [September 2026 TC39 meeting](https://github.com/tc39/proposals/commit/3c1e9eed79faced589802cd3d1a6c9110747d540)
+  - Added `es.` namespace module, `/es/` and `/stable/` namespace entries
+- [`Iterator` join proposal](https://github.com/tc39/proposal-iterator-join):
+  - Built-in:
+    - `Iterator.prototype.join`
+  - Moved to stable ES, [September 2026 TC39 meeting](https://github.com/tc39/proposals/commit/3c956df47516ecf49b7a50590ee0d2c3e57c8c0c)
+  - Added `es.` namespace module, `/es/` and `/stable/` namespace entries
 - Compat data improvements:
   - [`Iterator.{ zip, zipKeyed }`](https://github.com/tc39/proposal-joint-iteration) marked as [shipped in V8 ~ Chrome 153](https://issues.chromium.org/issues/465357675)
   - [`Iterator.prototype.includes`](https://github.com/tc39/proposal-iterator-includes) marked as [shipped in V8 ~ Chrome 154](https://issues.chromium.org/issues/504886973)
-  - [`Iterator.prototype.join`](https://github.com/tc39/proposal-iterator-join) marked as [shipped in V8 ~ Chrome 154](https://issues.chromium.org/issues/465715798)
+  - [`Iterator.prototype.join`](https://github.com/tc39/proposal-iterator-join) marked as [shipped in V8 ~ Chrome 153](https://issues.chromium.org/issues/465715798)
   - [`Promise.{ allKeyed, allSettledKeyed }`](https://github.com/tc39/proposal-await-dictionary) marked as [shipped in FF155](https://bugzilla.mozilla.org/show_bug.cgi?id=2057270)
   - `Iterator.prototype.{ drop, take }` marked as properly supported with [tc39/ecma262/#3776](https://github.com/tc39/ecma262/pull/3776) from FF158
   - [`Iterator.{ zip, zipKeyed }`](https://github.com/tc39/proposal-joint-iteration) marked as shipped in Bun 1.4.0
   - [`Iterator.prototype.{ chunks, windows }`](https://github.com/tc39/proposal-iterator-chunking) marked as shipped in Bun 1.4.0
   - [`Iterator.prototype.join`](https://github.com/tc39/proposal-iterator-join) marked as shipped in Bun 1.4.0
-  - Updated [Electron 45](https://releases.electronjs.org/) compat data mapping
-  - Added [Opera for Android 101](https://forums.opera.com/topic/89420/opera-for-android-101) compat data mapping
+  - [Updated Electron 45 and added 46](https://releases.electronjs.org/) compat data mapping
+  - Added Samsung Browser 31 compat data mapping
+  - Added Opera for Android [101](https://forums.opera.com/topic/89420/opera-for-android-101) and [102](https://forums.opera.com/topic/89629/opera-for-android-102) compat data mapping
 
 ### [3.50.0 - 2026.08.05](https://github.com/zloirock/core-js/releases/tag/v3.50.0)
 - Changes [v3.49.0...v3.50.0](https://github.com/zloirock/core-js/compare/v3.49.0...v3.50.0) (138 commits)

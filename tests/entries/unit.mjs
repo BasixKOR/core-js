@@ -347,6 +347,7 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok('next' in load(NS, 'get-iterator')([]));
     ok('Map' in load(NS));
     ok(typeof load(NS, 'iterator') == 'function');
+    ok(typeof load(NS, 'iterator/chunks') == 'function');
     ok(load(NS, 'iterator/concat')([2]).next().value === 2);
     ok(typeof load(NS, 'iterator/drop') == 'function');
     ok(typeof load(NS, 'iterator/every') == 'function');
@@ -355,11 +356,14 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(typeof load(NS, 'iterator/flat-map') == 'function');
     ok(typeof load(NS, 'iterator/for-each') == 'function');
     ok(typeof load(NS, 'iterator/from') == 'function');
+    ok(load(NS, 'iterator/includes')([1, 2].values(), 2) === true);
+    ok(load(NS, 'iterator/join')([1, 2].values()) === '1,2');
     ok(typeof load(NS, 'iterator/map') == 'function');
     ok(typeof load(NS, 'iterator/reduce') == 'function');
     ok(typeof load(NS, 'iterator/some') == 'function');
     ok(typeof load(NS, 'iterator/take') == 'function');
     ok(typeof load(NS, 'iterator/to-array') == 'function');
+    ok(typeof load(NS, 'iterator/windows') == 'function');
     const iteratorZip = load(NS, 'iterator/zip');
     ok([...iteratorZip([[1], [2]])][0][1] === 2);
     const iteratorZipKeyed = load(NS, 'iterator/zip-keyed');
@@ -722,11 +726,7 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(typeof load(NS, 'async-iterator/take') == 'function');
     ok(typeof load(NS, 'async-iterator/to-array') == 'function');
     ok(load(NS, 'function/metadata') === null);
-    ok(typeof load(NS, 'iterator/chunks') == 'function');
-    ok(load(NS, 'iterator/includes')([1, 2].values(), 2) === true);
-    ok(load(NS, 'iterator/join')([1, 2].values()) === '1,2');
     ok(typeof load(NS, 'iterator/to-async') == 'function');
-    ok(typeof load(NS, 'iterator/windows') == 'function');
     ok(load(NS, 'promise/all-keyed')({}) instanceof Promise);
     ok(load(NS, 'promise/all-settled-keyed')({}) instanceof Promise);
     ok(load(NS, 'symbol/metadata'));

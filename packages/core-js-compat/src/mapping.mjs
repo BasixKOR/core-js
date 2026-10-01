@@ -195,6 +195,7 @@ export default {
     [150, '43.0'],
     [152, '44.0'],
     [155, '45.0'],
+    [156, '46.0'],
   ],
   // https://github.com/mdn/browser-compat-data/blob/main/browsers/opera.json
   ChromeToOpera(chrome) {
@@ -253,6 +254,7 @@ export default {
     [130, '28.0'],
     [136, '29.0'],
     [143, '30.0'],
+    [148, '31.0'],
   ],
   // https://github.com/mdn/browser-compat-data/blob/main/browsers/opera_android.json
   // https://forums.opera.com/category/20/opera-for-android
@@ -316,6 +318,7 @@ export default {
     [148, 99],
     [149, 100],
     [151, 101],
+    [152, 102],
   ],
   // https://developers.meta.com/horizon/release-notes/web/
   // https://www.meta.com/experiences/browser/1916519981771802/

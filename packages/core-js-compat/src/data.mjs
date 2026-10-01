@@ -700,6 +700,10 @@ export const data = {
     firefox: '131',
     safari: '18.4',
   },
+  'es.iterator.chunks': {
+    bun: '1.4.0',
+    firefox: '154',
+  },
   'es.iterator.concat': {
     bun: '1.3.7',
     chrome: '146',
@@ -782,6 +786,16 @@ export const data = {
     // Because of a bug in wrapper validation https://bugs.webkit.org/show_bug.cgi?id=288714
     safari: '26.0', // 18.4',
   },
+  'es.iterator.includes': {
+    bun: '1.4.0',
+    chrome: '154',
+    firefox: '154',
+  },
+  'es.iterator.join': {
+    bun: '1.4.0',
+    chrome: '153',
+    firefox: '154',
+  },
   'es.iterator.map': {
     // with changes related to the new iteration closing approach on early error
     // https://github.com/tc39/ecma262/pull/3467
@@ -829,6 +843,10 @@ export const data = {
     deno: '1.38.1',
     firefox: '131',
     safari: '18.4',
+  },
+  'es.iterator.windows': {
+    bun: '1.4.0',
+    firefox: '154',
   },
   'es.iterator.zip': {
     bun: '1.4.0',
@@ -2622,10 +2640,8 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.iterator.as-indexed-pairs': {
   },
-  'esnext.iterator.chunks': {
-    bun: '1.4.0',
-    firefox: '154',
-  },
+  // TODO: Remove from `core-js@4`
+  'esnext.iterator.chunks': null,
   // TODO: Remove from `core-js@4`
   'esnext.iterator.concat': null,
   // TODO: Remove from `core-js@4`
@@ -2644,18 +2660,12 @@ export const data = {
   'esnext.iterator.for-each': null,
   // TODO: Remove from `core-js@4`
   'esnext.iterator.from': null,
-  'esnext.iterator.includes': {
-    bun: '1.4.0',
-    chrome: '154',
-    firefox: '154',
-  },
+  // TODO: Remove from `core-js@4`
+  'esnext.iterator.includes': null,
   'esnext.iterator.indexed': {
   },
-  'esnext.iterator.join': {
-    bun: '1.4.0',
-    chrome: '154',
-    firefox: '154',
-  },
+  // TODO: Remove from `core-js@4`
+  'esnext.iterator.join': null,
   // TODO: Remove from `core-js@4`
   'esnext.iterator.map': null,
   'esnext.iterator.range': {
@@ -2672,10 +2682,8 @@ export const data = {
   'esnext.iterator.to-array': null,
   'esnext.iterator.to-async': {
   },
-  'esnext.iterator.windows': {
-    bun: '1.4.0',
-    firefox: '154',
-  },
+  // TODO: Remove from `core-js@4`
+  'esnext.iterator.windows': null,
   // TODO: Remove from `core-js@4`
   'esnext.iterator.zip': null,
   // TODO: Remove from `core-js@4`
@@ -3277,6 +3285,7 @@ export const renamed = new Map([
   ['esnext.error.is-error', 'es.error.is-error'],
   ['esnext.global-this', 'es.global-this'],
   ['esnext.iterator.constructor', 'es.iterator.constructor'],
+  ['esnext.iterator.chunks', 'es.iterator.chunks'],
   ['esnext.iterator.concat', 'es.iterator.concat'],
   ['esnext.iterator.dispose', 'es.iterator.dispose'],
   ['esnext.iterator.drop', 'es.iterator.drop'],
@@ -3286,11 +3295,14 @@ export const renamed = new Map([
   ['esnext.iterator.flat-map', 'es.iterator.flat-map'],
   ['esnext.iterator.for-each', 'es.iterator.for-each'],
   ['esnext.iterator.from', 'es.iterator.from'],
+  ['esnext.iterator.includes', 'es.iterator.includes'],
+  ['esnext.iterator.join', 'es.iterator.join'],
   ['esnext.iterator.map', 'es.iterator.map'],
   ['esnext.iterator.reduce', 'es.iterator.reduce'],
   ['esnext.iterator.some', 'es.iterator.some'],
   ['esnext.iterator.take', 'es.iterator.take'],
   ['esnext.iterator.to-array', 'es.iterator.to-array'],
+  ['esnext.iterator.windows', 'es.iterator.windows'],
   ['esnext.iterator.zip', 'es.iterator.zip'],
   ['esnext.iterator.zip-keyed', 'es.iterator.zip-keyed'],
   ['esnext.json.is-raw-json', 'es.json.is-raw-json'],
